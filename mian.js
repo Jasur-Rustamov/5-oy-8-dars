@@ -61,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
       data.forEach(function (post) {
         console.log(`Title: ${post.title}`);
         console.log(`Body: ${post.body}`);
-        console.log("__________________________");
       });
     })
     .catch(function (error) {
@@ -82,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(`Ism: ${user.name.first} ${user.name.last}`);
       console.log(`Email: ${user.email}`);
       console.log(`Manzil: ${user.location.city}, ${user.location.country}`);
-      console.log("__________________________");
     })
     .catch(function (error) {
       console.log("Xatolik", error);
@@ -106,7 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log(`Jami kasallanganlar: ${data.cases}`);
       console.log(`Jami vafot etganlar: ${data.deaths}`);
       console.log(`Jami tuzalganlar: ${data.recovered}`);
-      console.log("__________________________________");
     })
     .catch(function (error) {
       console.log("Xatolik bor!!!", error);
@@ -126,7 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(function (data) {
       const bitcoin = data.bpi.USD.rate;
       console.log(`Bitcoin narxi: ${bitcoin}`);
-      console.log("___________________________");
     })
     .catch(function (error) {
       console.log("Xatolik bor!!!", error);
@@ -145,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .then(function (data) {
       console.log(`Toshkentdagi harorat: ${data.temperature}`);
-      console.log("________________________________________");
     })
     .catch(function (error) {
       console.error("Xatolik!!", error);
